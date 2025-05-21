@@ -56,14 +56,14 @@ function App() {
            <div className="w-full mb-1">
              <InputBox 
              label="to" 
-             amount={convertedAmount} 
+             amount={convertedAmount.toFixed(2)} 
              onCurrencyChange={(currency) => setTo(currency)}  
              amountDisabled
              currencyOptions={options} 
              selectedCurrency={to} 
              className="border-b border-gray-300"/>
           </div>
-          <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-lg mt-5 cursor-pointer hover:bg-blue-600">Convert</button>
+          <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-lg mt-5 cursor-pointer hover:bg-blue-600 uppercase">Convert {from} to {to} </button>
         </form>
       </div>
     </div>
