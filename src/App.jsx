@@ -50,7 +50,6 @@ function App() {
              className="border-b border-gray-300"/>
           </div>
           <div className="relative w-full h-0.5 flex justify-center items-center">
-            {/* <button className="absolute -top-2.5 px-4 bg-white text-gray-700" type="submit">Swap</button> */}
             <button onClick={swap} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-400 text-white px-2 py-0.5 cursor-pointer hover:bg-blue-500" type="submit">Swap</button>
           </div>
            <div className="w-full mb-1">
